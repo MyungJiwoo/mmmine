@@ -9,10 +9,15 @@ let priceFunc = (min, max, item) => {
   itemTag.innerText = `💲 ${todayPrice}`;
 };
 
-priceFunc(10, 20, "stone");
-priceFunc(10, 20, "coal");
-priceFunc(10, 20, "iron");
-priceFunc(10, 20, "copper");
-priceFunc(10, 20, "gold");
-priceFunc(10, 20, "lapis_lazuli");
-priceFunc(100, 200, "diamond");
+let priceList = () => {
+  priceFunc(10, 20, "stone");
+  priceFunc(10, 20, "coal");
+  priceFunc(10, 20, "iron");
+  priceFunc(10, 20, "copper");
+  priceFunc(10, 20, "gold");
+  priceFunc(10, 20, "lapis_lazuli");
+  priceFunc(100, 200, "diamond");
+};
+
+priceList();
+setInterval(() => priceList(), 1000 * 60 * 60 * 12);

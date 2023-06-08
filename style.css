@@ -32,6 +32,7 @@
 :root {
   --main-color: rgb(113, 130, 204);
   --main-text-color: rgb(36, 63, 184);
+  --sub-color: rgb(255, 248, 211);
 }
 
 html {
@@ -55,7 +56,7 @@ html {
 .title {
   text-align: center;
   margin: 5vh 0 10vh 0;
-  font-size: 1.8vw;
+  font-size: 2vw;
   color: var(--main-text-color);
   font-family: "GmarketSans500";
 }
@@ -74,7 +75,13 @@ table {
 td {
   border: 1px solid var(--main-color);
   padding: 1vw 2vw;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   color: var(--main-text-color);
   font-family: "GmarketSans300";
+}
+
+tr:hover {
+  background-color: var(--sub-color);
+  cursor: pointer;
+  font-weight: bold;
 }
