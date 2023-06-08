@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "GmarketSans300";
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSans500";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --main-color: rgb(113, 130, 204);
+  --main-text-color: rgb(36, 63, 184);
+}
+
+html {
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 50vw;
+  margin: auto;
+  margin-top: 10vh;
+  padding: 1vw;
+  background-color: white;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 15px;
+}
+
+.title {
+  text-align: center;
+  margin: 5vh 0 10vh 0;
+  color: var(--main-text-color);
+  font-family: "GmarketSans500";
+}
+
+.price__table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid var(--main-color);
+  padding: 1vw 2vw;
+  font-size: 18px;
+  color: var(--main-text-color);
+  font-family: "GmarketSans300";
+}
