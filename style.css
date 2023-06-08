@@ -55,6 +55,7 @@ html {
 .title {
   text-align: center;
   margin: 5vh 0 10vh 0;
+  font-size: 1.8vw;
   color: var(--main-text-color);
   font-family: "GmarketSans500";
 }
@@ -73,7 +74,7 @@ table {
 td {
   border: 1px solid var(--main-color);
   padding: 1vw 2vw;
-  font-size: 18px;
+  font-size: 1.5vw;
   color: var(--main-text-color);
   font-family: "GmarketSans300";
 }
