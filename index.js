@@ -6,7 +6,7 @@ let priceFunc = (min, max, item) => {
   );
 
   const itemTag = document.querySelector("." + item);
-  itemTag.innerText = `$ ${todayPrice}`;
+  itemTag.innerText = `💲 ${todayPrice}`;
 };
 
 priceFunc(10, 20, "stone");
